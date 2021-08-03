@@ -11,10 +11,10 @@ VOLUME /tmp
 EXPOSE 8080
 
 # The application's jar file
-ARG JAR_FILE=target/springboot-kubernetes-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/springboot-kubernetes-v3-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} springboot-kubernetes.jar
+ADD ${JAR_FILE} springboot-kubernetes-v3.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/springboot-kubernetes.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/springboot-kubernetes-v3.jar"]
