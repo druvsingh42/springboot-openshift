@@ -35,7 +35,7 @@ RUN mkdir -p /app
 # Expose port to listen to
 EXPOSE 8080
 # Copy the MicroProfile starter app
-COPY springboot-kubernetes-v3.jar /app/
+COPY springboot-kubernetes-v4.jar /app/
 # Copy the script from the source; run-java.sh has specific parameters to run a Thorntail app from the command line in a container. More on the script can be found at https://github.com/sshaaf/rhel7-jre-image/blob/master/run-java.sh
 COPY run-java.sh /app/
 # Setting up permissions for the script to run
